@@ -3,8 +3,9 @@
 	"file": "App.css",
 	"sources": [
 		"../../../sass/main.scss",
-		"../../../sass/pages/_home.scss"
+		"../../../sass/pages/_home.scss",
+		"../../../sass/base/_typography.scss"
 	],
 	"names": [],
-	"mappings": ""
+	"mappings": "AEAA,WAAW;AACX,OAAO,CAAC,6HAAI;AAEZ,OAAO,CAAC,mGAAI;AAEZ,AAAA,CAAC,CAAC;EACA,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU,GACvB;;AAED,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,KAAK,GACjB;;AAED,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,QAAQ,GACtB"
 }
