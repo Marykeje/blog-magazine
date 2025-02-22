@@ -1,0 +1,22 @@
+.btns {
+  display: flex;
+  gap: 1.6rem;
+
+  padding: 0.8rem 2rem;
+  height: 4rem;
+
+  border: none;
+  border-radius: 5px;
+
+  &--log-btn {
+    //  width: 8.4rem;
+    background: none;
+    border: 1.5px solid #000000;
+  }
+
+  &--started-btn {
+    background-color: #000000;
+    color: #ffffff;
+    //  width: 12rem;
+  }
+}
