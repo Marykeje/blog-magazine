@@ -1,0 +1,23 @@
+.blog-section {
+  padding: 8rem 0rem 7rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+
+  &__heading-title {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__heading-sub {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    & h5 {
+      font-size: 5.6remg;
+    }
+  }
+}
