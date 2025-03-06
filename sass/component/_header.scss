@@ -38,16 +38,18 @@
     gap: 3.2rem;
   }
 
-  &__nav-menu a:link,
-  :visited {
-    list-style: none;
-    text-decoration: none;
-    color: #000000;
+  &__nav-menu a {
+    &:link,
+    &:visited {
+      list-style: none;
+      text-decoration: none;
+      color: #000000;
 
-    padding: 1rem;
+      padding: 1rem;
+    }
 
     &:hover,
-    :active {
+    &:active {
       border-bottom: 1px solid #000;
     }
   }

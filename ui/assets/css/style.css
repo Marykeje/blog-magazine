@@ -1,20 +1,81 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 .blog-section {
-  padding: 8rem 0rem 7rem;
+  padding: 8rem 0rem 5rem;
   display: flex;
   flex-direction: column;
-  gap: 7rem; }
+  gap: 5rem; }
   .blog-section__heading-title {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem; }
+    gap: 1.6rem;
+    width: 70%; }
   .blog-section__heading-sub {
     display: flex;
     flex-direction: column;
     gap: 2.4rem; }
     .blog-section__heading-sub h5 {
-      font-size: 5.6remg; }
+      font-size: 5.6rem; }
+  .blog-section__blog-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; }
+  .blog-section__section-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem; }
+  .blog-section__section-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem; }
+  .blog-section__section-info-sub {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem; }
+    .blog-section__section-info-sub img {
+      display: block;
+      width: 25rem;
+      border-radius: 5px; }
+  .blog-section__blog-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem; }
+  .blog-section__blog-details-type {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem; }
+  .blog-section__blog-details-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; }
+    .blog-section__blog-details-heading h4 {
+      font-size: 3.2rem;
+      font-weight: 700; }
+  .blog-section__blog-types {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem; }
+    .blog-section__blog-types span {
+      font-size: 1.4rem;
+      font-weight: 600; }
+  .blog-section__blog-heading-details {
+    display: none; }
+
+.newsletter__mail-input {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem; }
+
+.newsletter__sub-btn {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding: 1.2rem 2.4rem; }
+
+.newsletter__sub-letters {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem; }
 
 .btns {
   display: flex;
@@ -54,15 +115,65 @@ body {
   max-width: 150rem;
   margin: auto;
   padding-left: 2.4rem;
-  padding-right: 24rem; }
+  padding-right: 2.4rem; }
 
 .sub-heading {
   font-size: 4.8rem;
   font-weight: 700; }
 
+.sub-heading-md {
+  font-size: 4rem; }
+
 .sub-heading-sm {
   font-size: 2.4rem;
   font-weight: 700; }
+
+.blog-type-bg {
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  padding: 4px 0.8rem; }
+
+.read-more {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: none;
+  border: none;
+  width: 12rem;
+  cursor: pointer; }
+  .read-more svg {
+    display: block;
+    width: 2.4rem; }
+
+.form {
+  width: 100%; }
+  .form__user-input {
+    height: 4.8rem;
+    background-color: #ffffff;
+    border: 1.5px solid #e6e6e6;
+    border-radius: 0.8rem;
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem; }
+    .form__user-input input {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      padding: 1.2rem 1.6rem 1.2rem 0rem;
+      font-weight: 300; }
+      .form__user-input input:focus {
+        outline: transparent; }
+      .form__user-input input ::placeholder {
+        color: #a3a3a3; }
+        @media (max-width: 980px) {
+          .form__user-input input ::placeholder {
+            font-size: 1.4rem; } }
+        @media (max-width: 350px) {
+          .form__user-input input ::placeholder {
+            font-size: 1.2rem; } }
 
 .header {
   height: 7.2rem;
@@ -91,16 +202,12 @@ body {
     display: flex;
     align-items: center;
     gap: 3.2rem; }
-  .header__nav-menu a:link,
-  .header :visited {
+  .header__nav-menu a:link, .header__nav-menu a:visited {
     list-style: none;
     text-decoration: none;
     color: #000000;
     padding: 1rem; }
-    .header__nav-menu a:link:hover,
-    .header__nav-menu a:link :active,
-    .header :visited:hover,
-    .header :visited :active {
-      border-bottom: 1px solid #000; }
+  .header__nav-menu a:hover, .header__nav-menu a:active {
+    border-bottom: 1px solid #000; }
 
 /*# sourceMappingURL=style.css.map */

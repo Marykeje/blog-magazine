@@ -1,14 +1,16 @@
 .blog-section {
-  padding: 8rem 0rem 7rem;
+  padding: 8rem 0rem 5rem;
 
   display: flex;
   flex-direction: column;
-  gap: 7rem;
+  gap: 5rem;
 
   &__heading-title {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
+
+    width: 70%;
   }
 
   &__heading-sub {
@@ -17,7 +19,96 @@
     gap: 2.4rem;
 
     & h5 {
-      font-size: 5.6remg;
+      font-size: 5.6rem;
     }
+  }
+
+  &__blog-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  &__section-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+  }
+
+  &__section-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  &__section-info-sub {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+
+    & img {
+      display: block;
+      width: 25rem;
+      border-radius: 5px;
+    }
+  }
+
+  &__blog-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__blog-details-type {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__blog-details-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    & h4 {
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+  }
+
+  &__blog-types {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    & span {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+  }
+
+  &__blog-heading-details {
+    display: none;
+  }
+}
+
+.newsletter {
+  &__mail-input {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__sub-btn {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 1.2rem 2.4rem;
+  }
+
+  &__sub-letters {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
   }
 }
