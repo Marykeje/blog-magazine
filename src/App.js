@@ -1,10 +1,17 @@
-import bussImage from "../ui/assets/imgs/business-img.png";
+import bissImage from "../src/assets/img/business-img.png";
+import image1 from "../src/assets/img/Image1.png";
+import image2 from "../src/assets/img/image2.jpg";
+import image3 from "../src/assets/img/Image3.png";
+import newsimg from "../src/assets/img/news-img.jpg"
+import image4 from "../src/assets/img/img4.png"
 
 export default function App() {
   return (
     <div>
       <Header />
       <BlogSection />
+      <Newsletter/>
+      <BlogPost/>
     </div>
   );
 }
@@ -66,7 +73,7 @@ function BlogSection() {
         <h5 className="sub-heading-sm">Featured blog posts</h5>
         <div className="blog-section__section-info">
           <div className="blog-section__blog-details">
-            <img src={bussImage} alt="" />
+            <img src={bissImage} alt="big-image" />
             <div className="blog-section__blog-details-type">
               <div className="blog-section__blog-types">
                 <p className="blog-type-bg">Food</p>
@@ -102,7 +109,7 @@ function BlogSection() {
           </div>
           <div className="blog-section__section-infos">
             <div className="blog-section__section-info-sub">
-              <img src="./assets/imgs/Image1.png" alt="" />
+              <img src={image1} alt="image-1" />
               <div className="blog-section__blog-details-type">
                 <div className="blog-section__blog-types">
                   <p className="blog-type-bg">WordPress</p>
@@ -131,7 +138,7 @@ function BlogSection() {
               </div>
             </div>
             <div className="blog-section__section-info-sub">
-              <img src="./assets/imgs/image2.jpg" alt="" />
+              <img src={image2} alt="image-2" />
               <div className="blog-section__blog-details-type">
                 <div className="blog-section__blog-types">
                   <p className="blog-type-bg">Fitness</p>
@@ -225,7 +232,7 @@ function BlogSection() {
               </div>
             </div>
             <div className="blog-section__section-info-sub">
-              <img src="./assets/imgs/Image3.png" alt="" />
+              <img src={image3} alt="image-3" />
               <div className="blog-section__blog-details-type">
                 <div className="blog-section__blog-types">
                   <p className="blog-type-bg">Finance</p>
@@ -253,6 +260,294 @@ function BlogSection() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Newsletter() {
+  return (
+    <section className="newsletter">
+      <img
+        src={newsimg}
+        alt=""
+        className="newsletter__news-img"
+      />
+      <div className="newsletter__letter-body container">
+        <div className="newsletter__signup-text">
+          <h3 className="sub-heading-md">Sign up for our newsletter</h3>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </div>
+        <div className="newsletter__sub-letters">
+          <div className="newsletter__mail-input">
+            <div className="form__user-input">
+              <input type="text" placeholder="Enter your email" />
+            </div>
+            <button className="newsletter__sub-btn">Subscribe</button>
+          </div>
+          <span>
+            By clicking Sign Up you're confirming that you agree with our Terms
+            and Conditions.
+          </span>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function BlogPost() {
+  return (
+    <section class="blog-posts container">
+      <div class="blog-posts__headings">
+        <div class="blog-posts__heading-type">
+          <h5 class="sub-heading">Popular</h5>
+          <span>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui?
+          </span>
+        </div>
+        <div class="blog-posts__view-all">
+          <button class="view-btn">View All</button>
+        </div>
+      </div>
+      <div class="blog-posts__blog-infos">
+        <div class="blog-posts__blog-layout">
+          <div class="blog-posts__blog-details">
+            <img
+              src={image4}
+              alt="img4"
+              class="blog-posts__blog-imgs"
+            />
+            <div class="blog-posts__blog-details-type">
+              <div class="blog-posts__blog-types">
+                <p class="blog-type-bg">Food</p>
+                <span class="">5 min read</span>
+              </div>
+              <div class="blog-posts__blog-details-heading">
+                <h4 class="sub-heading-sm">
+                  Travelling as a way of self-discovery and progress
+                </h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Suspendisse varius enim in eros.
+                </p>
+              </div>
+            </div>
+            <button class="read-more">
+              <p class="">Read more</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.9603 11.1423C15.18 11.362 15.18 11.7181 14.9603 11.9378L9.22541 17.6727C9.00573 17.8923 8.64963 17.8923 8.42996 17.6727L8.16476 17.4075C7.94508 17.1878 7.94508 16.8317 8.16476 16.612L13.2367 11.5401L8.16476 6.46812C7.94508 6.24844 7.94508 5.89234 8.16476 5.67267L8.42996 5.40747C8.64963 5.18779 9.00573 5.18779 9.22541 5.40747L14.9603 11.1423Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="blog-posts__blog-details">
+            <img
+              src="./assets/imgs/img4.png"
+              alt=""
+              class="blog-posts__blog-imgs"
+            />
+            <div class="blog-details__blog-details-type">
+              <div class="blog-section__blog-types">
+                <p class="blog-type-bg">Food</p>
+                <span class="">5 min read</span>
+              </div>
+              <div class="blog-posts__blog-details-heading">
+                <h4 class="sub-heading-sm">
+                  Travelling as a way of self-discovery and progress
+                </h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Suspendisse varius enim in eros.
+                </p>
+              </div>
+            </div>
+            <button class="read-more">
+              <p class="">Read more</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.9603 11.1423C15.18 11.362 15.18 11.7181 14.9603 11.9378L9.22541 17.6727C9.00573 17.8923 8.64963 17.8923 8.42996 17.6727L8.16476 17.4075C7.94508 17.1878 7.94508 16.8317 8.16476 16.612L13.2367 11.5401L8.16476 6.46812C7.94508 6.24844 7.94508 5.89234 8.16476 5.67267L8.42996 5.40747C8.64963 5.18779 9.00573 5.18779 9.22541 5.40747L14.9603 11.1423Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="blog-posts__blog-details">
+            <img
+              src="./assets/imgs/img5.png"
+              alt=""
+              class="blog-posts__blog-imgs"
+            />
+            <div class="blog-details__blog-details-type">
+              <div class="blog-section__blog-types">
+                <p class="blog-type-bg">Food</p>
+                <span class="">5 min read</span>
+              </div>
+              <div class="blog-posts__blog-details-heading">
+                <h4 class="sub-heading-sm">
+                  Travelling as a way of self-discovery and progress
+                </h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Suspendisse varius enim in eros.
+                </p>
+              </div>
+            </div>
+            <button class="read-more">
+              <p class="">Read more</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.9603 11.1423C15.18 11.362 15.18 11.7181 14.9603 11.9378L9.22541 17.6727C9.00573 17.8923 8.64963 17.8923 8.42996 17.6727L8.16476 17.4075C7.94508 17.1878 7.94508 16.8317 8.16476 16.612L13.2367 11.5401L8.16476 6.46812C7.94508 6.24844 7.94508 5.89234 8.16476 5.67267L8.42996 5.40747C8.64963 5.18779 9.00573 5.18779 9.22541 5.40747L14.9603 11.1423Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="blog-posts__blog-layout">
+          <div class="blog-posts__blog-details">
+            <img
+              src="./assets/imgs/img4.png"
+              alt=""
+              class="blog-posts__blog-imgs"
+            />
+            <div class="blog-posts__blog-details-type">
+              <div class="blog-posts__blog-types">
+                <p class="blog-type-bg">Food</p>
+                <span class="">5 min read</span>
+              </div>
+              <div class="blog-posts__blog-details-heading">
+                <h4 class="sub-heading-sm">
+                  Travelling as a way of self-discovery and progress
+                </h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Suspendisse varius enim in eros.
+                </p>
+              </div>
+            </div>
+            <button class="read-more">
+              <p class="">Read more</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.9603 11.1423C15.18 11.362 15.18 11.7181 14.9603 11.9378L9.22541 17.6727C9.00573 17.8923 8.64963 17.8923 8.42996 17.6727L8.16476 17.4075C7.94508 17.1878 7.94508 16.8317 8.16476 16.612L13.2367 11.5401L8.16476 6.46812C7.94508 6.24844 7.94508 5.89234 8.16476 5.67267L8.42996 5.40747C8.64963 5.18779 9.00573 5.18779 9.22541 5.40747L14.9603 11.1423Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="blog-posts__blog-details">
+            <img
+              src="./assets/imgs/img4.png"
+              alt=""
+              class="blog-posts__blog-imgs"
+            />
+            <div class="blog-details__blog-details-type">
+              <div class="blog-section__blog-types">
+                <p class="blog-type-bg">Food</p>
+                <span class="">5 min read</span>
+              </div>
+              <div class="blog-posts__blog-details-heading">
+                <h4 class="sub-heading-sm">
+                  Travelling as a way of self-discovery and progress
+                </h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Suspendisse varius enim in eros.
+                </p>
+              </div>
+            </div>
+            <button class="read-more">
+              <p class="">Read more</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.9603 11.1423C15.18 11.362 15.18 11.7181 14.9603 11.9378L9.22541 17.6727C9.00573 17.8923 8.64963 17.8923 8.42996 17.6727L8.16476 17.4075C7.94508 17.1878 7.94508 16.8317 8.16476 16.612L13.2367 11.5401L8.16476 6.46812C7.94508 6.24844 7.94508 5.89234 8.16476 5.67267L8.42996 5.40747C8.64963 5.18779 9.00573 5.18779 9.22541 5.40747L14.9603 11.1423Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="blog-posts__blog-details">
+            <img
+              src="./assets/imgs/img5.png"
+              alt=""
+              class="blog-posts__blog-imgs"
+            />
+            <div class="blog-details__blog-details-type">
+              <div class="blog-section__blog-types">
+                <p class="blog-type-bg">Food</p>
+                <span class="">5 min read</span>
+              </div>
+              <div class="blog-posts__blog-details-heading">
+                <h4 class="sub-heading-sm">
+                  Travelling as a way of self-discovery and progress
+                </h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Suspendisse varius enim in eros.
+                </p>
+              </div>
+            </div>
+            <button class="read-more">
+              <p class="">Read more</p>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.9603 11.1423C15.18 11.362 15.18 11.7181 14.9603 11.9378L9.22541 17.6727C9.00573 17.8923 8.64963 17.8923 8.42996 17.6727L8.16476 17.4075C7.94508 17.1878 7.94508 16.8317 8.16476 16.612L13.2367 11.5401L8.16476 6.46812C7.94508 6.24844 7.94508 5.89234 8.16476 5.67267L8.42996 5.40747C8.64963 5.18779 9.00573 5.18779 9.22541 5.40747L14.9603 11.1423Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
