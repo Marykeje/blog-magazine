@@ -9,12 +9,12 @@
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
-    width: 70%; }
+    width: 50%; }
   .blog-section__heading-sub {
     display: flex;
     flex-direction: column;
     gap: 2.4rem; }
-    .blog-section__heading-sub h5 {
+    .blog-section__heading-sub h2 {
       font-size: 5.6rem; }
   .blog-section__blog-infos {
     display: flex;
@@ -40,6 +40,8 @@
     display: flex;
     flex-direction: column;
     gap: 2.4rem; }
+    .blog-section__blog-details a {
+      text-decoration: none; }
   .blog-section__blog-details-type {
     display: flex;
     flex-direction: column;
@@ -219,7 +221,7 @@
   .btns--log-btn {
     width: 8.4rem;
     background: none;
-    border: 1.5px solid #000000;
+    border: 1.5px solid #868484;
     padding: 0.8rem 2rem; }
   .btns--started-btn {
     background-color: #000000;
