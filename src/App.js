@@ -2,16 +2,16 @@ import bissImage from "../src/assets/img/business-img.png";
 import image1 from "../src/assets/img/Image1.png";
 import image2 from "../src/assets/img/image2.jpg";
 import image3 from "../src/assets/img/Image3.png";
-import newsimg from "../src/assets/img/news-img.jpg"
-import image4 from "../src/assets/img/img4.png"
+import newsimg from "../src/assets/img/news-img.jpg";
+import image4 from "../src/assets/img/img4.png";
 
 export default function App() {
   return (
     <div>
       <Header />
       <BlogSection />
-      <Newsletter/>
-      <BlogPost/>
+      <Newsletter />
+      <BlogPost />
     </div>
   );
 }
@@ -40,13 +40,13 @@ function Header() {
       </div>
       <nav className="header__nav-list">
         <ul className="header__nav-menu">
-          <a href="#">
+          <a href=".home">
             <li>Home</li>
           </a>
-          <a href="#">
+          <a href=".popular">
             <li>Popular</li>
           </a>
-          <a href="#">
+          <a href=".trend">
             <li>Trending</li>
           </a>
         </ul>
@@ -77,7 +77,9 @@ function BlogSection() {
             <div className="blog-section__blog-details-type">
               <div className="blog-section__blog-types">
                 <p className="blog-type-bg">Food</p>
-                <span className="">5 min read</span>
+                <span className="blog-type-time">
+                  5 min read
+                </span>
               </div>
               <div className="blog-section__blog-details-heading">
                 <h4>
@@ -113,7 +115,7 @@ function BlogSection() {
               <div className="blog-section__blog-details-type">
                 <div className="blog-section__blog-types">
                   <p className="blog-type-bg">WordPress</p>
-                  <span>5 min read</span>
+                  <span className="blog-type-time">5 min read</span>
                 </div>
                 <p className="sub-heading-sm">
                   “Poly Amazing Race” sân chơi đầy thú vị mới dành cho sinh...
@@ -142,7 +144,7 @@ function BlogSection() {
               <div className="blog-section__blog-details-type">
                 <div className="blog-section__blog-types">
                   <p className="blog-type-bg">Fitness</p>
-                  <span>5 min read</span>
+                  <span className="blog-type-time">5 min read</span>
                 </div>
                 <p className="sub-heading-sm">
                   "Are you stretching correctly? Fitness experts break down what
@@ -236,7 +238,7 @@ function BlogSection() {
               <div className="blog-section__blog-details-type">
                 <div className="blog-section__blog-types">
                   <p className="blog-type-bg">Finance</p>
-                  <span>5 min read</span>
+                  <span className="blog-type-time">5 min read</span>
                 </div>
                 <p className="sub-heading-sm">
                   “Poly Amazing Race” sân chơi đầy thú vị mới dành cho sinh...
@@ -270,11 +272,7 @@ function BlogSection() {
 function Newsletter() {
   return (
     <section className="newsletter">
-      <img
-        src={newsimg}
-        alt=""
-        className="newsletter__news-img"
-      />
+      <img src={newsimg} alt="" className="newsletter__news-img" />
       <div className="newsletter__letter-body container">
         <div className="newsletter__signup-text">
           <h3 className="sub-heading-md">Sign up for our newsletter</h3>
@@ -299,33 +297,31 @@ function Newsletter() {
 
 function BlogPost() {
   return (
-    <section class="blog-posts container">
-      <div class="blog-posts__headings">
-        <div class="blog-posts__heading-type">
-          <h5 class="sub-heading">Popular</h5>
+    <section className="blog-posts container">
+      <div className="blog-posts__headings">
+        <div className="blog-posts__heading-type">
+          <h5 className="sub-heading">Popular</h5>
           <span>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui?
           </span>
         </div>
-        <div class="blog-posts__view-all">
-          <button class="view-btn">View All</button>
+        <div className="blog-posts__view-all">
+          <button className="view-btn">View All</button>
         </div>
       </div>
-      <div class="blog-posts__blog-infos">
-        <div class="blog-posts__blog-layout">
-          <div class="blog-posts__blog-details">
-            <img
-              src={image4}
-              alt="img4"
-              class="blog-posts__blog-imgs"
-            />
-            <div class="blog-posts__blog-details-type">
-              <div class="blog-posts__blog-types">
-                <p class="blog-type-bg">Food</p>
-                <span class="">5 min read</span>
+      <div className="blog-posts__blog-infos">
+        <div className="blog-posts__blog-layout">
+          <div className="blog-posts__blog-details">
+            <img src={image4} alt="img4" class="blog-posts__blog-imgs" />
+            <div className="blog-posts__blog-details-type">
+              <div className="blog-posts__blog-types">
+                <p className="blog-type-bg">Food</p>
+                <span className="blog-type-time">
+                  5 min read
+                </span>
               </div>
-              <div class="blog-posts__blog-details-heading">
-                <h4 class="sub-heading-sm">
+              <div className="blog-posts__blog-details-heading">
+                <h4 className="sub-heading-sm">
                   Travelling as a way of self-discovery and progress
                 </h4>
                 <p>
@@ -334,8 +330,8 @@ function BlogPost() {
                 </p>
               </div>
             </div>
-            <button class="read-more">
-              <p class="">Read more</p>
+            <button className="read-more">
+              <p className="">Read more</p>
               <svg
                 width="24"
                 height="24"
@@ -352,19 +348,21 @@ function BlogPost() {
               </svg>
             </button>
           </div>
-          <div class="blog-posts__blog-details">
+          <div className="blog-posts__blog-details">
             <img
               src="./assets/imgs/img4.png"
               alt=""
-              class="blog-posts__blog-imgs"
+              className="blog-posts__blog-imgs"
             />
-            <div class="blog-details__blog-details-type">
-              <div class="blog-section__blog-types">
-                <p class="blog-type-bg">Food</p>
-                <span class="">5 min read</span>
+            <div className="blog-details__blog-details-type">
+              <div className="blog-section__blog-types">
+                <p className="blog-type-bg">Food</p>
+                <span className="blog-type-time">
+                  5 min read
+                </span>
               </div>
-              <div class="blog-posts__blog-details-heading">
-                <h4 class="sub-heading-sm">
+              <div className="blog-posts__blog-details-heading">
+                <h4 className="sub-heading-sm">
                   Travelling as a way of self-discovery and progress
                 </h4>
                 <p>
@@ -373,8 +371,8 @@ function BlogPost() {
                 </p>
               </div>
             </div>
-            <button class="read-more">
-              <p class="">Read more</p>
+            <button className="read-more">
+              <p className="">Read more</p>
               <svg
                 width="24"
                 height="24"
@@ -391,19 +389,21 @@ function BlogPost() {
               </svg>
             </button>
           </div>
-          <div class="blog-posts__blog-details">
+          <div className="blog-posts__blog-details">
             <img
               src="./assets/imgs/img5.png"
               alt=""
-              class="blog-posts__blog-imgs"
+              className="blog-posts__blog-imgs"
             />
-            <div class="blog-details__blog-details-type">
-              <div class="blog-section__blog-types">
-                <p class="blog-type-bg">Food</p>
-                <span class="">5 min read</span>
+            <div className="blog-details__blog-details-type">
+              <div className="blog-section__blog-types">
+                <p className="blog-type-bg">Food</p>
+                <span className="blog-type-time">
+                  5 min read
+                </span>
               </div>
-              <div class="blog-posts__blog-details-heading">
-                <h4 class="sub-heading-sm">
+              <div className="blog-posts__blog-details-heading">
+                <h4 className="sub-heading-sm">
                   Travelling as a way of self-discovery and progress
                 </h4>
                 <p>
@@ -412,8 +412,8 @@ function BlogPost() {
                 </p>
               </div>
             </div>
-            <button class="read-more">
-              <p class="">Read more</p>
+            <button className="read-more">
+              <p className="">Read more</p>
               <svg
                 width="24"
                 height="24"
@@ -431,20 +431,22 @@ function BlogPost() {
             </button>
           </div>
         </div>
-        <div class="blog-posts__blog-layout">
-          <div class="blog-posts__blog-details">
+        <div className="blog-posts__blog-layout">
+          <div className="blog-posts__blog-details">
             <img
               src="./assets/imgs/img4.png"
               alt=""
-              class="blog-posts__blog-imgs"
+              className="blog-posts__blog-imgs"
             />
-            <div class="blog-posts__blog-details-type">
-              <div class="blog-posts__blog-types">
-                <p class="blog-type-bg">Food</p>
-                <span class="">5 min read</span>
+            <div className="blog-posts__blog-details-type">
+              <div className="blog-posts__blog-types">
+                <p className="blog-type-bg">Food</p>
+                <span className="blog-type-time">
+                  5 min read
+                </span>
               </div>
-              <div class="blog-posts__blog-details-heading">
-                <h4 class="sub-heading-sm">
+              <div className="blog-posts__blog-details-heading">
+                <h4 className="sub-heading-sm">
                   Travelling as a way of self-discovery and progress
                 </h4>
                 <p>
@@ -453,8 +455,8 @@ function BlogPost() {
                 </p>
               </div>
             </div>
-            <button class="read-more">
-              <p class="">Read more</p>
+            <button className="read-more">
+              <p className="">Read more</p>
               <svg
                 width="24"
                 height="24"
@@ -471,19 +473,21 @@ function BlogPost() {
               </svg>
             </button>
           </div>
-          <div class="blog-posts__blog-details">
+          <div className="blog-posts__blog-details">
             <img
               src="./assets/imgs/img4.png"
               alt=""
-              class="blog-posts__blog-imgs"
+              className="blog-posts__blog-imgs"
             />
-            <div class="blog-details__blog-details-type">
-              <div class="blog-section__blog-types">
-                <p class="blog-type-bg">Food</p>
-                <span class="">5 min read</span>
+            <div className="blog-details__blog-details-type">
+              <div className="blog-section__blog-types">
+                <p className="blog-type-bg">Food</p>
+                <span className="blog-type-time">
+                  5 min read
+                </span>
               </div>
-              <div class="blog-posts__blog-details-heading">
-                <h4 class="sub-heading-sm">
+              <div className="blog-posts__blog-details-heading">
+                <h4 className="sub-heading-sm">
                   Travelling as a way of self-discovery and progress
                 </h4>
                 <p>
@@ -492,8 +496,8 @@ function BlogPost() {
                 </p>
               </div>
             </div>
-            <button class="read-more">
-              <p class="">Read more</p>
+            <button className="read-more">
+              <p className="">Read more</p>
               <svg
                 width="24"
                 height="24"
@@ -510,19 +514,21 @@ function BlogPost() {
               </svg>
             </button>
           </div>
-          <div class="blog-posts__blog-details">
+          <div className="blog-posts__blog-details">
             <img
               src="./assets/imgs/img5.png"
               alt=""
-              class="blog-posts__blog-imgs"
+              className="blog-posts__blog-imgs"
             />
-            <div class="blog-details__blog-details-type">
-              <div class="blog-section__blog-types">
-                <p class="blog-type-bg">Food</p>
-                <span class="">5 min read</span>
+            <div className="blog-details__blog-details-type">
+              <div className="blog-section__blog-types">
+                <p className="blog-type-bg">Food</p>
+                <span className="blog-type-time">
+                  5 min read
+                </span>
               </div>
-              <div class="blog-posts__blog-details-heading">
-                <h4 class="sub-heading-sm">
+              <div className="blog-posts__blog-details-heading">
+                <h4 className="sub-heading-sm">
                   Travelling as a way of self-discovery and progress
                 </h4>
                 <p>
@@ -531,8 +537,8 @@ function BlogPost() {
                 </p>
               </div>
             </div>
-            <button class="read-more">
-              <p class="">Read more</p>
+            <button className="read-more">
+              <p className="">Read more</p>
               <svg
                 width="24"
                 height="24"

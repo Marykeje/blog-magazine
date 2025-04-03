@@ -84,11 +84,6 @@
     display: flex;
     align-items: center;
     gap: 1.6rem;
-
-    & span {
-      font-size: 1.4rem;
-      font-weight: 600;
-    }
   }
 
   &__blog-heading-details {
@@ -320,4 +315,130 @@
       color: #ffffff;
     }
   }
+}
+
+.read-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 4rem 0rem;
+
+  &__header {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: auto;
+    padding: 0rem 1rem;
+  }
+
+  &__header-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__header-title {
+    display: flex;
+    align-items: center;
+    // gap: 0.8rem;
+  }
+
+  &__bloggers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__blogger-details {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__blogger-img {
+    display: block;
+    width: 4.8rem;
+  }
+
+  &__blogger-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__time-date {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    & svg {
+      display: block;
+      width: 3.2rem;
+      background-color: #f4f4f4;
+      // border-radius: 50%;
+      padding: 4px;
+    }
+  }
+
+  &__blog-img {
+    display: block;
+    width: 140rem;
+  }
+
+  &__blog-read {
+    width: 50%;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  &__blog-body {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  &__blog-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__blog-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    & p {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  }
+
+  &__blogs-type {
+    display: flex;
+    gap: 0.8rem;
+
+    margin-top: auto;
+  }
+
+  &__blog-img-sm {
+    display: block;
+    width: 76rem;
+
+    border-radius: 5px;
+  }
+}
+
+.divider {
+  background-color: #000000;
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
 }
