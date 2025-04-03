@@ -1,0 +1,20 @@
+.signin {
+  background-color: #f4f4f4;
+  max-width: 70rem;
+  margin: 10rem auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+
+  &__header {
+    display: flex;
+    //  align-items: center;
+    //  justify-content: center;
+
+    & a {
+      text-decoration: none;
+    }
+  }
+}

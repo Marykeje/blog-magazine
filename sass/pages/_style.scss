@@ -96,6 +96,8 @@
   padding: 11.5rem 6.4rem;
   position: relative;
 
+  margin: 6rem 0rem;
+
   &::before {
     position: absolute;
     top: 0;
@@ -173,7 +175,7 @@
 }
 
 .blog-posts {
-  padding: 11rem 0rem 2rem;
+  padding: 5rem 0rem 2rem;
 
   display: flex;
   flex-direction: column;
@@ -321,7 +323,7 @@
   display: flex;
   flex-direction: column;
   gap: 6rem;
-  padding: 4rem 0rem;
+  padding: 4rem 0rem 0rem;
 
   &__header {
     width: 50%;
@@ -393,16 +395,48 @@
     width: 140rem;
   }
 
-  &__blog-read {
+  &__blog-body {
     width: 50%;
     margin: auto;
-    padding: 2rem;
+    padding: 0rem 2rem 0rem;
   }
 
   &__blog-body {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 5rem;
+  }
+
+  &__blog-body-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__blog-body-img {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__figcap {
+    font-size: 1.4rem;
+    padding-left: 0.8rem;
+    border-left: 2px solid #000000;
+  }
+
+  &__blog-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    // padding-bottom: 4rem;
+  }
+
+  &__blog-read {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   &__blog-bottom {
