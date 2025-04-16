@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .blog-section {
   padding: 8rem 0rem 5rem;
   display: flex;
@@ -172,7 +173,7 @@
   padding: 8rem 6.4rem; }
   .footer-section__top-details {
     display: grid;
-    grid-template-columns: 60rem 1fr;
+    grid-template-columns: 70rem 1fr;
     gap: 4rem; }
   .footer-section__footer-newsletter {
     display: flex;
@@ -186,6 +187,8 @@
     display: flex;
     flex-direction: column;
     gap: 1.8rem; }
+    .footer-section__menu-list p {
+      font-weight: 600; }
   .footer-section__menu-links {
     list-style: none;
     display: flex;
@@ -207,6 +210,15 @@
     gap: 2.4rem; }
     .footer-section__details-menu a {
       color: #ffffff; }
+  .footer-section__social-icon {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem; }
+    .footer-section__social-icon svg {
+      display: block;
+      width: 2.4rem; }
+    .footer-section__social-icon li {
+      font-size: 1.4rem; }
 
 .read-details {
   display: flex;
@@ -312,19 +324,47 @@
   border-radius: 100%; }
 
 .signin {
-  background-color: #f4f4f4;
-  max-width: 70rem;
-  margin: 10rem auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70vh; }
+  background-color: #ffffff;
+  width: 40vw;
+  margin: 20rem auto;
+  height: auto; }
+  .signin__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 5rem 6rem; }
   .signin__header {
-    display: flex; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; }
     .signin__header a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #000000; }
+    .signin__header p {
+      font-size: 3rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600; }
+  .signin__sign-up {
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+    .signin__sign-up a {
+      color: #20c2a1; }
+  .signin__sign-btn {
+    font-size: 1.8rem;
+    background-color: #11d4ad;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30rem;
+    padding: 1.6rem 5rem; }
 
 /* Inter */
+/* poppins */
 * {
   padding: 0;
   margin: 0;
@@ -337,7 +377,8 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Roboto";
-  color: #000000; }
+  color: #000000;
+  background-color: #f7f8f8; }
 
 .container {
   max-width: 150rem;
@@ -394,16 +435,33 @@ body {
   font-size: 1.4rem; }
 
 .form {
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+  .form__form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+    .form__form-input a {
+      font-size: 1.4rem;
+      color: #20c2a1;
+      margin-left: auto; }
   .form__user-input {
     height: 4.8rem;
+    width: 34rem;
     background-color: #ffffff;
     border: 1.5px solid #e6e6e6;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 1.2rem 1.6rem;
     display: flex;
     align-items: center;
     gap: 1.6rem; }
+    .form__user-input--border {
+      background: none;
+      width: 36rem; }
+      .form__user-input--border input {
+        color: #ffffff; }
     .form__user-input input {
       width: 100%;
       background-color: transparent;
@@ -420,8 +478,12 @@ body {
         @media (max-width: 350px) {
           .form__user-input input ::placeholder {
             font-size: 1.2rem; } }
-    .form__user-input--border {
-      background: none; }
+    .form__user-input svg {
+      display: block;
+      width: 2.4rem;
+      cursor: pointer; }
+  .form label {
+    font-size: 1.4rem; }
 
 .header {
   height: 7.2rem;
@@ -450,6 +512,8 @@ body {
     display: flex;
     align-items: center;
     gap: 3.2rem; }
+    .header__nav-menu li {
+      list-style: none; }
   .header__nav-menu a:link, .header__nav-menu a:visited {
     list-style: none;
     text-decoration: none;
@@ -475,7 +539,7 @@ body {
     border: 1.5px solid #868484;
     padding: 0.8rem 2rem; }
     .btns--log-btn:hover {
-      background-color: #000000;
+      background-color: #1e1e1e;
       color: #ffffff; }
   .btns--started-btn {
     background-color: #000000;
